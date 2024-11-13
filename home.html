@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Dashboard</title>
+    <link rel="stylesheet" href="css/homestyle.css"> <!-- Link to your CSS file -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="images/Logonetflix.png" class="logo">
+        <ul>
+          <li><a href="#tv-shows">TV Shows</a></li>
+          <li><a href="#movies">Movies</a></li>
+          <li><a href="#recently-added">Recently Added</a></li>
+          <li><a href="#my-list">My List</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <img class="hero-image" src="images/b3.png" alt="Movie Banner" />
+      
+      <!-- Video Element -->
+      <video id="hero-video" class="hero-video" controls>
+        <source src="images/btrailer.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      
+      <div class="hero-content">
+        <h1 class="hero-title">Bridgerton</h1>
+        
+        <p class="hero-description" style="color: rgb(180, 179, 179);">My TV Time | 2024 | 8 Episodes | TV-PG </p>
+        <p class="hero-description">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>
+        <div class="hero-buttons">
+          <button class="play-btn" id="play-button">
+            <img src="images/right-arrow.png" alt="Play" class="btn-icon" /> Play
+          </button>
+          <button class="mylist-btn">
+            <img src="images/plus.png" alt="My List" class="btn-icon" /> My List
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="recently-added">
+      <h1 style="margin-left: -120px;">Recently Added</h1>
+      <div class="carousel">
+        <div class="carousel-item1">
+            <img src="images/te.jpg" alt="Movie 1">
+            <div class="overlay">
+                <h2>Movie Title 1</h2>
+                <p>Description of Movie 1</p>
+            </div>
+        </div>
+        <!-- Repeat for other carousel items -->
+    
+
+        <div class="carousel-item1">
+          <img src="images/tgm.jpeg" alt="Movie 2">
+          <div class="overlay">
+            <h2>Movie Title 1</h2>
+            <p>Description of Movie 1</p>
+          </div>
+        </div>
+        <div class="carousel-item1">
+          <img src="images/tb1.jpg" alt="Movie 2">
+          <div class="overlay">
+            <h2>Movie Title 1</h2>
+            <p>Description of Movie 1</p>
+          </div>
+        </div>
+        <div class="carousel-item1">
+          <img src="images/tbb.jpg" alt="Movie 2">
+          <div class="overlay">
+            <h2>Movie Title 1</h2>
+            <p>Description of Movie 1</p>
+          </div>
+        </div>
+        <div class="carousel-item1">
+          <img src="images/n.jpg" alt="Movie 2">
+          <div class="overlay">
+            <h2>Movie Title 1</h2>
+            <p>Description of Movie 1</p>
+          </div>
+        </div>
+        <div class="carousel-item1">
+          <img src="images/m.jpg" alt="Movie 2">
+          <div class="overlay">
+            <h2>Movie Title 1</h2>
+            <p>Description of Movie 1</p>
+          </div>
+        </div>
+        <div class="carousel-item1">
+          <img src="images/lafs.jpg" alt="Movie 2">
+          <div class="overlay">
+            <h2>Movie Title 1</h2>
+            <p>Description of Movie 1</p>
+          </div>
+        </div>
+        <div class="carousel-item1">
+          <img src="images/l.jpg" alt="Movie 2">
+          <div class="overlay">
+            <h2>Movie Title 1</h2>
+            <p>Description of Movie 1</p>
+          </div>
+        </div>
+        <div class="carousel-item1">
+          <img src="images/ds.jpg" alt="Movie 2">
+          <div class="overlay">
+            <h2>Movie Title 1</h2>
+            <p>Description of Movie 1</p>
+          </div>
+        </div>
+
+        <!-- Add more items -->
+      </div>
+      <!-- Add content related to Recently Added here -->
+    </section>
+
+    
+    
+
+
+    <header>
+      <h1 style="margin-left: -6px;">Featured Movies & New Releases</h1>
+  </header>
+
+   <!-- Filter buttons come first -->
+   <div id="filter-container">
+      <button class="filter-btn" data-genre="all">All</button>
+      <button class="filter-btn" data-genre="action">Action</button>
+      <button class="filter-btn" data-genre="comedy">Comedy</button>
+      <button class="filter-btn" data-genre="drama">Drama</button>
+  </div>
+
+  <section id="featured-movies">
+      <div class="movie-card" data-genre="action">
+          <img src="images/b.jpeg" alt="Action Movie 1">
+          <h2>Action Movie 1</h2>
+          <p>Release Year: 2024</p>
+      </div>
+
+      <div class="movie-card" data-genre="action">
+          <img src="images/b.jpeg" alt="Action Movie 2">
+          <h2>Action Movie 1</h2>
+          <p>Release Year: 2024</p>
+      </div>
+
+      <div class="movie-card" data-genre="action">
+          <img src="images/b.jpeg" alt="Action Movie 3">
+          <h2>Action Movie 2</h2>
+          <p>Release Year: 2023</p>
+      </div>
+
+      <div class="movie-card" data-genre="action">
+          <img src="images/b.jpeg" alt="Action Movie 3">
+          <h2>Action Movie 1</h2>
+          <p>Release Year: 2024</p>
+      </div>
+
+      <div class="movie-card" data-genre="action">
+          <img src="images/b.jpeg" alt="Action Movie 4">
+          <h2>Action Movie 1</h2>
+          <p>Release Year: 2024</p>
+      </div>
+
+      <div class="movie-card" data-genre="action">
+          <img src="images/b.jpeg" alt="Action Movie 5">
+          <h2>Action Movie 1</h2>
+          <p>Release Year: 2024</p>
+      </div>
+
+      <!--------------comedy--------------------->
+
+      <div class="movie-card" data-genre="comedy">
+          <img src="images/eip.jpg" alt="Comedy Movie 1">
+          <h2>Comedy Movie 1</h2>
+          <p>Release Year: 2022</p>
+      </div>
+      <div class="movie-card" data-genre="comedy">
+          <img src="images/knt.jpg" alt="Comedy Movie 2">
+          <h2>Comedy Movie 2</h2>
+          <p>Release Year: 2021</p>
+      </div>
+
+      <div class="movie-card" data-genre="comedy">
+        <img src="images/knt.jpg" alt="Comedy Movie 3">
+        <h2>Comedy Movie 2</h2>
+        <p>Release Year: 2021</p>
+    </div>
+    <div class="movie-card" data-genre="comedy">
+      <img src="images/knt.jpg" alt="Comedy Movie 4">
+      <h2>Comedy Movie 2</h2>
+      <p>Release Year: 2021</p>
+  </div>
+  <div class="movie-card" data-genre="comedy">
+    <img src="images/knt.jpg" alt="Comedy Movie 5">
+    <h2>Comedy Movie 2</h2>
+    <p>Release Year: 2021</p>
+</div>
+<div class="movie-card" data-genre="comedy">
+  <img src="images/knt.jpg" alt="Comedy Movie 6">
+  <h2>Comedy Movie 2</h2>
+  <p>Release Year: 2021</p>
+</div>
+
+<!----------------drama----------------->
+<div class="movie-card" data-genre="drama">
+  <img src="images/knt.jpg" alt="Drama 1">
+  <h2>Comedy Movie 2</h2>
+  <p>Release Year: 2021</p>
+</div>
+
+<div class="movie-card" data-genre="drama">
+  <img src="images/knt.jpg" alt="Drama 2">
+  <h2>Comedy Movie 2</h2>
+  <p>Release Year: 2021</p>
+</div>
+<div class="movie-card" data-genre="drama">
+  <img src="images/knt.jpg" alt="Drama 3">
+  <h2>Comedy Movie 2</h2>
+  <p>Release Year: 2021</p>
+</div>
+<div class="movie-card" data-genre="drama">
+  <img src="images/knt.jpg" alt="Drama 4">
+  <h2>Comedy Movie 2</h2>
+  <p>Release Year: 2021</p>
+</div>
+<div class="movie-card" data-genre="drama">
+  <img src="images/knt.jpg" alt="Drama 5">
+  <h2>Comedy Movie 2</h2>
+  <p>Release Year: 2021</p>
+</div>
+<div class="movie-card" data-genre="drama">
+  <img src="images/knt.jpg" alt="Drama 6">
+  <h2>Comedy Movie 2</h2>
+  <p>Release Year: 2021</p>
+</div>
+      <!-- Add more cards as needed -->
+  </section>
+
+
+    
+
+    <section id="tv-shows">
+      <h1 style="margin-left: -120px;">TV Shows</h1>
+
+      
+        <div class="carousel">
+          <div class="carousel-item">
+            <img src="images/eip.jpg" alt="Movie 1">
+          </div>
+          <div class="carousel-item">
+            <img src="images/knt.jpg" alt="Movie 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/knt.jpg" alt="Movie 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/knt.jpg" alt="Movie 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/knt.jpg" alt="Movie 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/knt.jpg" alt="Movie 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/knt.jpg" alt="Movie 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/knt.jpg" alt="Movie 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/knt.jpg" alt="Movie 2">
+          </div>
+
+          <!-- Add more items -->
+        </div>
+    </section>
+      
+      <!-- Add content related to TV Shows here -->
+    
+
+    
+
+    <section id="recently-added">
+      <h1 style="margin-left: -120px;">Recently Added</h1>
+      <div class="carousel">
+        <div class="carousel-item1">
+          <img src="images/te.jpg" alt="Movie 1">
+        </div>
+        <div class="carousel-item1">
+          <img src="images/tgm.jpeg" alt="Movie 2">
+        </div>
+        <div class="carousel-item1">
+          <img src="images/tb1.jpg" alt="Movie 2">
+        </div>
+        <div class="carousel-item1">
+          <img src="images/tbb.jpg" alt="Movie 2">
+        </div>
+        <div class="carousel-item1">
+          <img src="images/n.jpg" alt="Movie 2">
+        </div>
+        <div class="carousel-item1">
+          <img src="images/m.jpg" alt="Movie 2">
+        </div>
+        <div class="carousel-item1">
+          <img src="images/lafs.jpg" alt="Movie 2">
+        </div>
+        <div class="carousel-item1">
+          <img src="images/l.jpg" alt="Movie 2">
+        </div>
+        <div class="carousel-item1">
+          <img src="images/ds.jpg" alt="Movie 2">
+        </div>
+
+        <!-- Add more items -->
+      </div>
+      <!-- Add content related to Recently Added here -->
+    </section>
+
+    <section id="my-list">
+      <h1 style="margin-left: -120px;">My List</h1>
+      <div class="carousel">
+        <div class="carousel-item1">
+          <img src="images/te.jpg" alt="Movie 1">
+        </div>
+        <div class="carousel-item1">
+          <img src="images/tgm.jpeg" alt="Movie 2">
+        </div>
+        <div class="carousel-item1">
+          <img src="images/tb1.jpg" alt="Movie 2">
+        </div>
+        <div class="carousel-item1">
+          <img src="images/tbb.jpg" alt="Movie 2">
+        </div>
+        <div class="carousel-item1">
+          <img src="images/n.jpg" alt="Movie 2">
+        </div>
+        <div class="carousel-item1">
+          <img src="images/m.jpg" alt="Movie 2">
+        </div>
+        <div class="carousel-item1">
+          <img src="images/lafs.jpg" alt="Movie 2">
+        </div>
+        <div class="carousel-item1">
+          <img src="images/l.jpg" alt="Movie 2">
+        </div>
+        <div class="carousel-item1">
+          <img src="images/ds.jpg" alt="Movie 2">
+        </div>
+
+        <!-- Add more items -->
+      </div>
+      <!-- Add content related to My List here -->
+    </section>
+
+    <footer>
+      <p>Netflix India &copy; 2024</p>
+    </footer>
+
+    <script src="js/homejs"></script>
+  </body>
+</html>

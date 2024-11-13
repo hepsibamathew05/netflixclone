@@ -1,0 +1,420 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: #fff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #141414;
+  padding: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav img.logo {
+  width: 100px;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #b3001b;
+}
+
+
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+  background-image: url(C:\Users\HEPSIBA.G\Desktop\netflix\images\bridgertonseason3_.jpeg);
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 100%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 40%;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-info, .hero-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-buttons .play-btn,
+.hero-buttons .mylist-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.play-btn {
+  background-color: white;
+  color: black;
+}
+
+.play-btn:hover {
+  background-color: #e6e6e6;
+}
+
+.mylist-btn {
+  background-color: rgba(109, 109, 110, 0.7);
+  color: white;
+}
+
+.mylist-btn:hover {
+  background-color: rgba(109, 109, 110, 0.9);
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Video Styling */
+.hero-video {
+  display: none;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  object-fit: cover;
+}
+
+
+/* featured movies */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+#filter-container {
+  margin-bottom: 30px;
+  margin-left: -2px;
+}
+
+.filter-btn {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.filter-btn:hover {
+  background-color: #666;
+}
+
+#featured-movies {
+  display: flex;
+  flex-wrap: nowrap; /* Prevents wrapping */
+  overflow-x: auto; /* Enables horizontal scrolling */
+  gap: 20px; /* Space between cards */
+  padding: 10px; /* Padding around the content */
+  scrollbar-width: none; /* Hides scrollbar for Firefox */
+  margin-left: -6px;
+}
+
+/* Hides scrollbar for WebKit browsers */
+#featured-movies::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 200px;
+  padding: 10px;
+  text-align: left;
+  flex: 0 0 auto; /* Ensures cards don’t shrink */
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.movie-card h2 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.movie-card p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+
+#featured-movies :hover{
+  transform: scale(1.1);
+}
+
+
+
+/* Sections Styling */
+section {
+  padding: 5px 130px;
+  margin-bottom: 40px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+/* Carousel */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  margin-left: -120px;
+  margin-right: -120px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+.carousel-item, .carousel-item1 {
+  margin-right: 20px;
+  transition: transform 0.3s ease-in-out;
+  position: relative; /* For the bounding box to align correctly */
+}
+
+.carousel-item img {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.carousel-item1 img{
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.carousel-item:hover, .carousel-item1:hover {
+  transform: scale(1.1);
+}
+
+.carousel-item:hover img, .carousel-item1:hover img {
+ 
+  border: 2px solid rgba(255, 255, 255, 0.8); /* Border around the image */
+  border-radius: 15px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Transparent background */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+.overlay h2, .overlay p {
+  margin: 0;
+}
+
+.carousel-item1:hover .overlay {
+  opacity: 1;
+}
+
+/* Section Styling (Alternating rows) */
+#tv-shows, #movies, #recently-added, #my-list {
+  border-top: 1px solid #333;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 90px;
+}
+
+.text-col {
+  flex: 1;
+}
+
+.img-col {
+  flex: 1;
+  text-align: right;
+}
+
+.text-col h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.text-col p {
+  font-size: 18px;
+  color: #999;
+  max-width: 400px;
+}
+
+.img-col img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #141414;
+  padding: 40px 130px;
+  text-align: center;
+  color: #777;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  section {
+    padding: 40px 20px;
+  }
+
+  header nav ul li {
+    margin-left: 10px;
+  }
+
+  .hero-content {
+    margin-left: 20px;
+    max-width: 90%;
+  }
+
+  .hero-title {
+    font-size: 40px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-buttons .play-btn, 
+  .hero-buttons .mylist-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .carousel-item img {
+    width: 150px;
+    height: 225px;
+  }
+
+  .text-col, .img-col {
+    text-align: center;
+  }
+
+  .img-col img {
+    width: 100%;
+  }
+}
